@@ -16,12 +16,12 @@ public class Formular {
 
     private String name ;
     private String surname ;
-    private long number ;
+    private String number ;
 
     private String email ;
     private String message ;
 
-    public Formular(String name, String surname, long number, String email, String message) {
+    public Formular(String name, String surname, String number, String email, String message) {
         this.name = name;
         this.surname = surname;
         this.number = number;
@@ -30,6 +30,15 @@ public class Formular {
     }
 
     public Formular() {
+    }
+
+    public Formular allData(String name , String surname , String email , String message) {
+        Formular formular = new Formular() ;
+        formular.setEmail(email);
+        formular.setMessage(message);
+        formular.setName(name);
+        formular.setSurname(surname);
+        return  formular ;
     }
 
     public long getId() {
@@ -56,11 +65,11 @@ public class Formular {
         this.surname = surname;
     }
 
-    public long getNumber() {
+    public String getNumber() {
         return number;
     }
 
-    public void setNumber(long number) {
+    public void setNumber(String number) {
         this.number = number;
     }
 
