@@ -1,16 +1,35 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+
 <head>
-    <meta charset="UTF-8"/>
-    <title>Strona</title>
+    <meta charset="UTF-8" />
+    <title>GAL -SPRZEDAZ JAJ</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/reset.css" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <link href="../static/css/style.css" rel="stylesheet" type="text/css">
 </head>
+
 <body>
-<li class="active"><a th:href="@{/form}" data-target-id="home"><i class="fa fa-home fa-fw"></i>Formularz</a></li>
-<li class="active"><a th:href="@{/kontakt}" data-target-id="home"><i class="fa fa-home fa-fw"></i>Kontakt</a></li>
-<li class="active"><a th:href="@{/oferta}" data-target-id="home"><i class="fa fa-home fa-fw"></i>Oferta</a></li>
-<li class="active"><a th:href="@{/map}" data-target-id="home"><i class="fa fa-home fa-fw"></i>Map</a></li>
+   <div id ="welcome">
+       <header class = "menu">
+          <ul>
+        <li class="active"><a th:href="@{/form}" data-target-id="home"><i class="fa fa-home fa-fw"></i>Formularz</a></li>
+        <li class="active"><a th:href="@{/kontakt}" data-target-id="home"><i class="fa fa-home fa-fw"></i>Kontakt</a></li>
+        <li class="active"><a th:href="@{/oferta}" data-target-id="home"><i class="fa fa-home fa-fw"></i>Oferta</a></li>
+        <li class="active"><a th:href="@{/map}" data-target-id="home"><i class="fa fa-home fa-fw"></i>Map</a></li>
+    </ul>
+</haeder>
+        <div class="container">
+             <h1>GAL<br>SPRZEDAŻ JAJ I MAKARONÓW</h1>
+             <!-- <p> SPRZEDAŻ JAJ I MAKARONÓW </p> -->
+         </div>
+
+</body>
+
+</html>
 
 
 
 </body>
+
 </html>

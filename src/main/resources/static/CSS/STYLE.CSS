@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+}
+
+.clearfix:after{
+    content: "";
+    display: table;
+    clear:both;
+}
+
+.container {
+    width: 1500px;
+    margin: 0 auto;
+}
+
+
+body {
+    background-image: url(../images/egg10.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    font-family: 'Merriweather', serif;
+}
+
+.menu{
+
+}
+
+/*.logo {*/
+    /*background-image: url(../images/logo-gal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}*/
+
+.container h1 {
+    color: #ffffff;
+    font-size: 90px;
+    font-weight: bold;
+    padding-left: center;
+    padding-left:300px;
+    padding-top: 500px;
+    display: inline-block;
+}
+.container p {
+    color: #ffffff;
+    font-size: 70px;
+    font-weight: bold;
+    padding-left: center;
+    padding-left: 300px;
+    padding-top: 500px;
+}
+
+.active {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: center;
+    padding-left: 250px;
+    padding-top: 30px;
+    display: inline-block;
+
+}
