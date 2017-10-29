@@ -4,24 +4,23 @@
 <head>
     <meta charset="UTF-8"/>
     <title>GAL -SPRZEDAZ JAJ</title>
-<<<<<<< HEAD
-    <link rel="stylesheet" type="text/css" href="../static/css/reset.css" />
+    <link rel="stylesheet" type="text/css" th:href="@{../vendor/css/reset.css}">
     <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
-    <link href="../static/css/style.css" rel="stylesheet" type="text/css">
+    <link th:href="@{../vendor/css/style.css}" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-<section id = "welcome">
+<section id="welcome">
    <div class = "container">
        <header class = "page-header clearfix">
           <ul>
-        <li class="active"><a th:href="@{/form}" data-target-id="home"><i class="fa fa-home fa-fw"></i>Formularz</a></li>
-        <li class="active"><a th:href="@{/kontakt}" data-target-id="home"><i class="fa fa-home fa-fw"></i>Kontakt</a></li>
-        <li class="active"><a th:href="@{/oferta}" data-target-id="home"><i class="fa fa-home fa-fw"></i>Oferta</a></li>
-        <li class="active"><a th:href="@{/map}" data-target-id="home"><i class="fa fa-home fa-fw"></i>Map</a></li>
+        <li class="active"><a th:href="@{/form}" data-target-id="home"><i class="fa fa-home fa-fw"></i>Kontakt</a></li>
+             <li class="active"><a th:href="@{/oferta}" data-target-id="home"><i class="fa fa-home fa-fw"></i>Oferta</a></li>
+        <li class="active"><a th:href="@{/us}" data-target-id="home"><i class="fa fa-home fa-fw"></i>O nas</a></li>
     </ul>
     <h1>GAL<br>SPRZEDAŻ JAJ I MAKARONÓW</h1>
 </header>
+   </div>
 </section>
 
 <section class = "container2">
@@ -30,48 +29,24 @@
 
 
 
-<footer>
 <footer class = "page-footer">
 <div class = "container3">
     <header class = "footer-header">
-        <img src = "images/logo-gal.jpg">
+
     </header>
     <div class = "footer-cont clearfix">
         <div class = "col1-2">
             <nav>
                 <ul>
-                    <li><a href = "linki">Kontakt</a></li>
-                    <li><a href = "linki"> Menu </a></li>
+                    <li><a th:href="@{/form}">Kontakt</a></li>
+                    <li><a th:href="@{/}"> Menu </a></li>
                 </ul>
+            </nav>
+        </div>
+    </div>
+</div>
 </footer>
 </body>
 
 </html>
-=======
-    <link rel="stylesheet" type="text/css" th:href="@{../vendor/css/reset.css}"/>
-    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet"/>
-    <link th:href="@{../vendor/css/style.css}" rel="stylesheet" type="text/css"/>
->>>>>>> 4ddb5c764ee6e5ffd45168425db0e26f47f3e831
 
-
-</head>
-
-<body>
-<div id="welcome">
-    <header class="menu">
-        <ul>
-            <li class="active"><a th:href="@{/form}" data-target-id="home"><i class="fa fa-home fa-fw"></i>Kontakt</a>
-            </li>
-            <li class="active"><a th:href="@{/oferta}" data-target-id="home"><i class="fa fa-home fa-fw"></i>Oferta</a>
-            </li>
-            <li class="active"><a th:href="@{/us}" data-target-id="home"><i class="fa fa-home fa-fw"></i>O nas</a>
-            </li>
-        </ul>
-    </header>
-    <div class="container">
-        <h1>GAL<br>SPRZEDAŻ JAJ I MAKARONÓW</br></h1>
-        <!-- <p> SPRZEDAŻ JAJ I MAKARONÓW </p> -->
-    </div>
-</div>
-</body>
-</html>
