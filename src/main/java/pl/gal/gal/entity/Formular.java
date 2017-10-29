@@ -1,9 +1,14 @@
 package pl.gal.gal.entity;
 
+import org.hibernate.validator.constraints.Email;
+import org.hibernate.validator.constraints.NotBlank;
+import org.springframework.format.annotation.NumberFormat;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.constraints.Pattern;
 
 @Entity
 @Table(name = "form")
@@ -14,11 +19,17 @@ public class Formular {
     @GeneratedValue
     private long id ;
 
+    @NotBlank
+    private String subject;
+    @NotBlank
     private String name ;
+    @NotBlank
     private String surname ;
+    @NotBlank
     private String number ;
-
+    @Email
     private String email ;
+    @NotBlank
     private String message ;
 
     public Formular(String name, String surname, String number, String email, String message) {
@@ -32,13 +43,13 @@ public class Formular {
     public Formular() {
     }
 
-    public Formular allData(String name , String surname , String email , String message) {
-        Formular formular = new Formular() ;
-        formular.setEmail(email);
-        formular.setMessage(message);
-        formular.setName(name);
-        formular.setSurname(surname);
-        return  formular ;
+    public Formular(String subject, String name, String surname, String number, String email, String message) {
+        this.subject = subject;
+        this.name = name;
+        this.surname = surname;
+        this.number = number;
+        this.email = email;
+        this.message = message;
     }
 
     public long getId() {
@@ -87,5 +98,13 @@ public class Formular {
 
     public void setMessage(String message) {
         this.message = message;
+    }
+
+    public String getSubject() {
+        return subject;
+    }
+
+    public void setSubject(String subject) {
+        this.subject = subject;
     }
 }
