@@ -3,18 +3,23 @@
 <head>
     <meta charset="UTF-8"/>
     <title>Title</title>
+    <link rel="stylesheet" type="text/css" th:href="@{../vendor/css/reset.css}">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <link th:href="@{../vendor/css/style.css}" rel="stylesheet" type="text/css">
 </head>
 <body>
-<form th:action="@{/form}" method="post" th:object="${form}">
-    <input type="text" placeholder="Temat"  id="subject" th:field="*{subject}"/>
-    <input type="text" placeholder="Imię"  id="name" th:field="*{name}"/>
-    <input type="text" placeholder="Nazwisko" id="surname" th:field="*{surname}"/>
-    <input type="text" placeholder="Email"  id="email" th:field="*{email}"/>
-    <input type="number" placeholder="Numer Telefonu"  id="number" th:field="*{number}"/>
-    <textarea  placeholder="Wiadomość" id="message" th:field="*{message}"></textarea>
-    <input type="submit" value="Wyślij"/>
-
-
+<form th:action="@{/form}" method="post" th:object="${form}" class="cf">
+    <div class="half left cf">
+        <input type="text" id="input-subject" placeholder="Temat"  th:field="*{subject}"/>
+        <input type="text" id="input-name" placeholder="Imię" th:field="*{name}"/>
+        <input type="text" id="input-surname" placeholder="Nazwisko" th:field="*{surname}"/>
+        <input type="email" id="input-email" placeholder="Email address" th:field="*{email}"/>
+        <input type="text" id="input-number" placeholder="Numer Telefonu" th:field="*{number}"/>
+    </div>
+    <div class="half right cf">
+        <textarea name="message" type="text" id="input-message" placeholder="Message"></textarea>
+    </div>
+    <input type="submit" value="Wyślij" id="input-submit"/>
 </form>
 </body>
 </html>

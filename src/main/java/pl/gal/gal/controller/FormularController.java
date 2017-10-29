@@ -22,8 +22,9 @@ public class FormularController {
     FormularRepository formularRepository;
 
     @GetMapping("")
-    public String getMapping(Model model, Formular formular) {
-        model.addAttribute("form", new Formular());
+    public String getMapping(Model model) {
+        Formular formular = new Formular();
+        model.addAttribute("form", formular);
         return "form";
     }
 

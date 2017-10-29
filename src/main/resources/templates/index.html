@@ -11,40 +11,67 @@
 
 <body>
 <section id="welcome">
-   <div class = "container">
-       <header class = "page-header clearfix">
-          <ul>
-        <li class="active"><a th:href="@{/form}" data-target-id="home"><i class="fa fa-home fa-fw"></i>Kontakt</a></li>
-             <li class="active"><a th:href="@{/oferta}" data-target-id="home"><i class="fa fa-home fa-fw"></i>Oferta</a></li>
-        <li class="active"><a th:href="@{/us}" data-target-id="home"><i class="fa fa-home fa-fw"></i>O nas</a></li>
-    </ul>
-    <h1>GAL<br>SPRZEDAŻ JAJ I MAKARONÓW</h1>
-</header>
-   </div>
-</section>
-
-<section class = "container2">
-             <p>Firma "Gal" to hurtownia z bogatym długoletnim doświadczeniem, ktora funkcjonuje na rynku spożywczym od ponad 20 lat. Specjalizacja firmy jest sprzedaż najwyższej jakości jaj konsumpcyjnych, a także makaronów z jaj przepiórczych. </p>
-</section>
+    <div class="container">
+        <header class="page-header clearfix">
+            <!--<ul>-->
+            <!--<li class="active"><a th:href="@{/form}" data-target-id="home"><i class="fa fa-home fa-fw"></i>Kontakt</a></li>-->
+            <!--<li class="active"><a th:href="@{/oferta}" data-target-id="home"><i class="fa fa-home fa-fw"></i>Oferta</a></li>-->
+            <!--<li class="active"><a th:href="@{/us}" data-target-id="home"><i class="fa fa-home fa-fw"></i>O nas</a></li>-->
+            <!--</ul>-->
 
 
-
-<footer class = "page-footer">
-<div class = "container3">
-    <header class = "footer-header">
-
-    </header>
-    <div class = "footer-cont clearfix">
-        <div class = "col1-2">
-            <nav>
-                <ul>
-                    <li><a th:href="@{/form}">Kontakt</a></li>
-                    <li><a th:href="@{/}"> Menu </a></li>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#about">O nas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#services">Oferta</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" th:href="@{/form}">Kontakt</a>
+                    </li>
                 </ul>
-            </nav>
+            </div>
+            <h1>GAL<br>SPRZEDAŻ JAJ I MAKARONÓW</h1>
+        </header>
+    </div>
+</section>
+
+<section id="about">
+    <div class="about">
+        <p>Firma "Gal" to hurtownia z bogatym długoletnim doświadczeniem, ktora funkcjonuje na rynku spożywczym od ponad
+            20 lat. Specjalizacja firmy jest sprzedaż najwyższej jakości jaj konsumpcyjnych, a także makaronów z jaj
+            przepiórczych i kurzych . </p>
+    </div>
+</section>
+
+<section id="services">
+    <div class="oferta">
+        <p>Oferta</p>
+
+    </div>
+
+
+</section>
+
+
+<footer class="page-footer">
+    <div class="container3">
+        <header class="footer-header">
+
+        </header>
+        <div class="footer-cont clearfix">
+            <div class="col1-2">
+                <nav>
+                    <ul>
+                        <li><a th:href="@{/form}">Kontakt</a></li>
+                        <li><a href="#"> Menu </a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </div>
-</div>
 </footer>
 </body>
 
