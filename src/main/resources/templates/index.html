@@ -2,8 +2,9 @@
 <html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
 
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8"/>
     <title>GAL -SPRZEDAZ JAJ</title>
+<<<<<<< HEAD
     <link rel="stylesheet" type="text/css" href="../static/css/reset.css" />
     <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
     <link href="../static/css/style.css" rel="stylesheet" type="text/css">
@@ -46,9 +47,31 @@
 </body>
 
 </html>
+=======
+    <link rel="stylesheet" type="text/css" th:href="@{../vendor/css/reset.css}"/>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet"/>
+    <link th:href="@{../vendor/css/style.css}" rel="stylesheet" type="text/css"/>
+>>>>>>> 4ddb5c764ee6e5ffd45168425db0e26f47f3e831
 
 
+</head>
 
+<body>
+<div id="welcome">
+    <header class="menu">
+        <ul>
+            <li class="active"><a th:href="@{/form}" data-target-id="home"><i class="fa fa-home fa-fw"></i>Kontakt</a>
+            </li>
+            <li class="active"><a th:href="@{/oferta}" data-target-id="home"><i class="fa fa-home fa-fw"></i>Oferta</a>
+            </li>
+            <li class="active"><a th:href="@{/us}" data-target-id="home"><i class="fa fa-home fa-fw"></i>O nas</a>
+            </li>
+        </ul>
+    </header>
+    <div class="container">
+        <h1>GAL<br>SPRZEDAŻ JAJ I MAKARONÓW</br></h1>
+        <!-- <p> SPRZEDAŻ JAJ I MAKARONÓW </p> -->
+    </div>
+</div>
 </body>
-
 </html>

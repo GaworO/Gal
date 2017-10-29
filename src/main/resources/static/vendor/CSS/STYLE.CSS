@@ -21,8 +21,13 @@
 
 
 
+<<<<<<< HEAD:src/main/resources/static/CSS/STYLE.CSS
 .container {
     background-image: url(../images/egg10.jpg);
+=======
+body {
+    background-image: url(../IMAGES/egg10.jpg);
+>>>>>>> 4ddb5c764ee6e5ffd45168425db0e26f47f3e831:src/main/resources/static/vendor/CSS/STYLE.CSS
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -30,6 +35,24 @@
     font-family: 'Merriweather', serif;
 }
 
+<<<<<<< HEAD:src/main/resources/static/CSS/STYLE.CSS
+=======
+
+
+
+.menu{
+
+}
+
+/*.logo {*/
+    /*background-image: url(../images/logo-gal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}*/
+
+>>>>>>> 4ddb5c764ee6e5ffd45168425db0e26f47f3e831:src/main/resources/static/vendor/CSS/STYLE.CSS
 .container h1 {
     color: #ffffff;
     font-size: 90px;
