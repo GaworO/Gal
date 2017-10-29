@@ -13,8 +13,15 @@
     margin: 0 auto;
 }
 
+.container2 {
+    width: 1000px;
+    margin: 0 auto;
+    height: 500px;
+}
 
-body {
+
+
+.container {
     background-image: url(../images/egg10.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -23,34 +30,27 @@ body {
     font-family: 'Merriweather', serif;
 }
 
-.menu{
-
-}
-
-/*.logo {*/
-    /*background-image: url(../images/logo-gal.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-}*/
-
 .container h1 {
     color: #ffffff;
     font-size: 90px;
     font-weight: bold;
     padding-left: center;
-    padding-left:300px;
-    padding-top: 500px;
+    padding-left:250px;
+    padding-top: 250px;
     display: inline-block;
 }
-.container p {
-    color: #ffffff;
-    font-size: 70px;
+
+.container2 {
+    background-color: white;
+}
+
+.container2 p {
+    color: black;
+    font-size: 30px;
     font-weight: bold;
     padding-left: center;
-    padding-left: 300px;
-    padding-top: 500px;
+    padding-left: 100px;
+    padding-top: 150px;
 }
 
 .active {
@@ -62,4 +62,30 @@ body {
     padding-top: 30px;
     display: inline-block;
 
+}
+
+.page-footer {
+    background-color: pink;
+
+}
+
+
+.footer-header {
+    background-color: pink;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+.container3 {
+    width: 1500px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.col1-2 {
+    color:pink;
+    font-size: 30px;
+    display: inline;
 }
