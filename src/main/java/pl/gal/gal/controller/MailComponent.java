@@ -32,7 +32,8 @@ public class MailComponent {
 
 
     public boolean sendSimpleEmail(Formular formular) {
-        String myMessage = "Imię:    " + formular.getName() + "\n" +
+        String myMessage = "Temat:    " + formular.getSubject() + "\n" +
+                "Imię:    " + formular.getName() + "\n" +
                 "Nazwisko:    " + formular.getSurname() + "\n" +
                 "Numer Telefonu: " + formular.getNumber() + "\n" +
                 "Email:   " + formular.getEmail() + "\n" +
@@ -40,7 +41,7 @@ public class MailComponent {
         SimpleMailMessage simpleMailMessage = new SimpleMailMessage();
         simpleMailMessage.setFrom(formular.getEmail());
         simpleMailMessage.setTo("gal.gaworjozef@gmail.com");
-        simpleMailMessage.setSubject(formular.getSubject());
+//        simpleMailMessage.setSubject(formular.getSubject());
         simpleMailMessage.setText(myMessage);
 
 
@@ -55,37 +56,5 @@ public class MailComponent {
 
     }
 
-//
-//    public boolean sentHtmlEmail(@ModelAttribute Formular formular) {
-//
-//        SimpleMailMessage simpleMailMessage = new SimpleMailMessage();
-//        Context context = new Context();
-//        context.setVariable("form", formular);
-//        final String content = templateEngine.process("email/contact", context);
-//        String myMessage1 = "Imię " + formular.getName() + "/n" +
-//                "Nazwisko " + formular.getSurname() + "/n" +
-//                "Numer Telefonu" + formular.getNumber() + "/n" +
-//                "Email" + formular.getEmail() + "/n" +
-//                "Wiadomość" + formular.getMessage();
-//
-//        MimeMessage mimeMessage = javaMailSender.createMimeMessage();
-//        MimeMessageHelper mailMessage = new MimeMessageHelper(mimeMessage);
-//
-//
-//        try {
-//            mailMessage.setFrom(formular.getEmail());
-//            mailMessage.setTo("gal.gaworjozef@gmail.com");
-//            mailMessage.setSubject("Nowa Wiadomość");
-//            mailMessage.setText(myMessage1, true);
-//            javaMailSender.send(mimeMessage);
-//            return true;
-//
-//        } catch (MessagingException e) {
-//            e.printStackTrace();
-//            System.err.println(e.getMessage());
-//            return false;
-//        }
-//
-//    }
 }
 

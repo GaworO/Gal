@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="UTF-8"/>
+    <title>GAL -SPRZEDAZ JAJ</title>
+    <link rel="stylesheet" type="text/css" th:href="@{../vendor/css/reset.css}">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <link th:href="@{../vendor/css/style.css}" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<section id="welcome">
+    <div class="container">
+        <header class="page-header clearfix">
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#about">O nas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#services">Oferta</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" th:href="@{/form}">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+            <h1>GAL<br>SPRZEDAŻ JAJ I MAKARONÓW</h1>
+        </header>
+    </div>
+</section>
+
+<section id="about">
+    <div class="about">
+        <p>Firma "Gal" to hurtownia z bogatym długoletnim doświadczeniem, ktora funkcjonuje na rynku spożywczym od ponad
+            20 lat. Specjalizacja firmy jest sprzedaż najwyższej jakości jaj konsumpcyjnych, a także makaronów z jaj
+            przepiórczych i kurzych . </p>
+    </div>
+</section>
+
+<section id="services">
+    <div class="oferta">
+        <p>Oferta</p>
+
+    </div>
+
+
+</section>
+
+
+<footer class="page-footer">
+    <div class="container3">
+        <header class="footer-header">
+
+        </header>
+        <div class="footer-cont clearfix">
+            <div class="col1-2">
+                <nav>
+                    <ul>
+                        <li><a th:href="@{/form}">Kontakt</a></li>
+                        <li><a href="#"> Menu </a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>
+

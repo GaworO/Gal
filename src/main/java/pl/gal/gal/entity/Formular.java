@@ -1,35 +1,21 @@
 package pl.gal.gal.entity;
 
-import org.hibernate.validator.constraints.Email;
-import org.hibernate.validator.constraints.NotBlank;
-import org.springframework.format.annotation.NumberFormat;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
-import javax.validation.constraints.Pattern;
-
-@Entity
-@Table(name = "form")
 public class Formular {
 
 
-    @Id
-    @GeneratedValue
     private long id ;
 
-    @NotBlank
     private String subject;
-    @NotBlank
+
     private String name ;
-    @NotBlank
+
     private String surname ;
-    @NotBlank
+
     private String number ;
-    @Email
+
     private String email ;
-    @NotBlank
+
     private String message ;
 
     public Formular(String name, String surname, String number, String email, String message) {

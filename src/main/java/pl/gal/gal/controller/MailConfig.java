@@ -51,7 +51,7 @@ public class MailConfig {
         return  mailSender ;
 
     }
-    //props.put("mail.smtp.ssl.trust", "smtp.gmail.com");
+
 
 
 
